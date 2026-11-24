@@ -381,6 +381,26 @@ In a real-world environment, additional security measures could include:
 
 These recommendations were identified as potential improvements and were not implemented as part of this simulation.
 
+## Connectivity Testing Summary
+
+Testing was conducted to verify that the network configuration met the project objectives and that connected devices could successfully access simulated network services.
+
+| Test ID | Test Description | Expected Result | Actual Result | Status |
+|---|---|---|---|---|
+| TC-001 | Office PC DHCP configuration | IPv4 settings assigned automatically | IPv4 settings received | PASS |
+| TC-002 | Wireless laptop authentication | Successful connection to MyHome | Connected successfully | PASS |
+| TC-003 | Laptop web connectivity | Simulated webpage loads | Webpage loaded successfully | PASS |
+| TC-004 | Office PC web connectivity | Simulated webpage loads | Webpage loaded successfully | PASS |
+| TC-005 | Bedroom PC DHCP configuration | IPv4 settings assigned automatically | IPv4 settings received | PASS |
+| TC-006 | Bedroom PC web connectivity | Simulated webpage loads | Webpage loaded successfully | PASS |
+
+### Testing Conclusion
+
+All six documented tests passed successfully. The results demonstrate that the configured network supports automatic IPv4 address allocation, wireless authentication and access to a simulated external web server through both wired and wireless connections.
+
+Supporting screenshots are provided throughout the Network Configuration section.
+
+
 
 
 
