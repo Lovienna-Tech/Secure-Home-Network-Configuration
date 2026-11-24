@@ -1,5 +1,7 @@
 # Secure-Home-Network-Configuration Cisco Packet Tracer
-A stimulated home network configured using Cisco Packet Tracer, demonstrating IPv4 addressing, DHCP, wired and wireless connectivity, router hardening, WPA2- Personal security and network connectivity testing.
+
+## Project Overview
+This project demonstrates the configuration and security of a simulated home network using Cisco Packet Tracer. The network consists of wired and wireless end devices, a wireless router, a cable modem and a coaxial splitter. The project focuses on establishing network connectivity, configuring automatic IP address allocation through DHCP, implementing wireless security controls and verifying network functionality. This project was completed as part of my Cisco Networking Basics training to develop practical skills in IT support, networking and cybersecurity.
 
 ## Objectives
 1. Connect Devices (Wired & Wireless) to the home router.
