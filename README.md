@@ -73,20 +73,26 @@ Powered on the television and confirmed that a television programme was displaye
 
 ![Topology](Screenshot2_TV_on.png)
 
-# Step 2: Connect the network cable
-In this packet tracer activity there are two PC's in the house that don't have wireless LAN adapters, therefore they will need to be connected  with Ethernet cables. 
+#### Step 2: Establishing Wired Network Connections
 
-For the Home Wireless Router to access the internet over the cable TV provider network the Cable Modem needs to be connected to the Home Wireless Router internet port using a copper straight-through cable.
+Ethernet cables were used to establish physical connections between the cable modem, wireless router and desktop computers.
 
-Connections → Copper Straight-Through Cable → Cable Modem → Port 1 → Home Wireless Router → Internet port.
+**Configuration:**
 
-Connections → Copper Straight-Through Cable → Office PC → FastEthernet0 port → Home Wireless Router → GigabitEthernet1 port.
+- Connected the cable modem to the Internet (WAN) port of the wireless router.
+- Connected the Office PC to a LAN port on the wireless router.
+- Connected the Bedroom PC to a LAN port on the wireless router.
 
-Connections → Copper Straight-Through Cable → Bedroom PC → FastEthernet0 port → Home Wireless Router → GigabitEthernet2 port.
+**Purpose:**
 
-After these steps the wired home network is fully connected to the internet through the cable TV provider network.
+The WAN connection enables the wireless router to communicate with the simulated internet service provider through the cable modem.
+
+The LAN connections allow the desktop computers to communicate within the local network and access external network services through the router.
+
+**Evidence:**
 
 ![Topology](Screenshot3_Wired_Connections.png)
+*Physical Ethernet connections between the network devices.*
 
 ## Part 2: Configure the Wireless Router
 # Step 1: Access the Home Wireless Router GUI.
