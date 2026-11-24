@@ -44,7 +44,7 @@ The network includes:
 - A wireless laptop
 - A television
 
-![Final Topology](Screenshot16_Final_Topology.png)
+![Final Network Topology](Screenshot16_Final_Topology.png)
 
 *Figure 1: Completed home network topology in Cisco Packet Tracer.*
 
@@ -61,7 +61,7 @@ In this simulated home network, internet and television services are delivered t
 - Connected the cable splitter (Coaxial1) to the cable modem (Port 0).
 - Connected the cable splitter (Coaxial2) to the television (Port 0).
 
-![Topology](Screenshot1_coaxial-connections.png)
+![Coaxial Connections](Screenshot1_coaxial-connections.png)
 
 **Purpose:**
 
@@ -71,7 +71,7 @@ The cable modem provides the connection between the home network and the simulat
 
 Powered on the television and confirmed that a television programme was displayed, verifying the simulated television connection.
 
-![Topology](Screenshot2_TV_on.png)
+![Television Connectivity](Screenshot2_TV_on.png)
 
 #### Step 2: Establishing Wired Network Connections
 
@@ -91,7 +91,7 @@ The LAN connections allow the desktop computers to communicate within the local 
 
 **Evidence:**
 
-![Topology](Screenshot3_Wired_Connections.png)
+![Wired Network Connectivity](Screenshot3_Wired_Connections.png)
 *Physical Ethernet connections between the network devices.*
 
 ### Part 2: Wireless Router Configuration
@@ -107,7 +107,7 @@ The Office PC was configured to obtain its network settings automatically using 
 - Selected DHCP to obtain IPv4 configuration automatically.
 - Identified the default gateway address from the assigned network settings.
 
-![Topology](Screenshot4_Office_PC_IP_Config.png)
+![Office PC IP Configuration](Screenshot4_Office_PC_IP_Config.png)
 
 **Purpose:**
 
@@ -122,7 +122,7 @@ The default gateway enables devices on the local network to communicate with ext
 - Accessed the wireless router's management interface using the default administrative credentials provided for the simulation.
 
 
-![Topology](Screenshot5_Router_Login_GUI.png)
+![Router Management Interface](Screenshot5_Router_Login_GUI.png)
 
 **Verification:**
 
@@ -155,14 +155,33 @@ Unauthorised administrative access could allow an attacker to modify network set
 
 In a real-world environment, administrative access should be restricted to authorised individuals and protected using strong, unique credentials.
 
-# Step 3: Configure a wireless LAN
-To connect wireless devices to the home wireless network over WIFI I enabled the 2.4 GHz network. 
+#### Step 3: Configuring the Wireless Network
 
-Wireless tab → 2.4 GHz → Enable
+The wireless router was configured to provide wireless connectivity to compatible end devices within the home network.
 
-I then changed the SSID from the default name to 'MyHome' so that those searching for my network can find it. I then saved these settings. 
+**Configuration:**
 
-To set up security for my network I enabled WPA2 Personal and created a PassPhrase so that my netwrok can ony be accessed by those I provided my PassPhrase to and then saved these settings. 
+- Navigated to the wireless settings within the router's management interface.
+- Enabled the 2.4 GHz wireless network.
+- Configured the Service Set Identifier (SSID) as MyHome.
+- Saved the wireless configuration.
+
+**Purpose:**
+
+The SSID identifies the wireless network and allows users to distinguish it from other available wireless networks.
+
+The 2.4 GHz frequency band provides wireless connectivity and generally offers greater coverage than higher frequency bands, although it can be more susceptible to interference.
+
+**Evidence:**
+
+![Wireless SSID Configuration](Screenshot7_SSID_Wireless.png)
+
+**Security Considerations:**
+
+Configuring a custom SSID helps identify the intended wireless network. However, an SSID alone does not prevent unauthorised access.
+
+Wireless authentication and encryption must be configured separately to protect the network.
+
 ![Topology](Screenshot8_WPA2_Personal_Wireless_Security.png)
 
 ## Part 3: Configure IP Addressing and Test Connectivity
