@@ -13,6 +13,27 @@ This project demonstrates the configuration and security of a simulated home net
 - Verify network connectivity by testing access to a simulated external web server.
 - Document network configurations and provide screenshots as technical evidence.
 
+## Tools and Technologies
+- Cisco Packet Tracer
+- IPv4 addressing
+- Dynamic Host Configuration Protocol (DHCP)
+- Wireless Local Area Network (WLAN)
+- Ethernet and coaxial cabling
+- WPA2-Personal
+- Router Graphical User Interface (GUI)
+
+## Technical Skills Demonstrated
+- Network topology interpretation
+- Wired and wireless network configuration
+- Dynamic IP address allocation
+- Default gateway identification
+- Router administration
+- Wireless authentication and encryption
+- Basic router hardening
+- Network connectivity testing
+- Technical documentation
+
+
 
 ## Part 1: Connect the devices
 In this project internet and video services are delivered through a coaxial cable. The cable is connected to an outlet in the home and a splitter devices seperates the internet data services from the video services. This enables the two services to be connected to the appropriate devices.
