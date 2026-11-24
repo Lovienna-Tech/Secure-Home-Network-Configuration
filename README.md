@@ -182,7 +182,35 @@ Configuring a custom SSID helps identify the intended wireless network. However,
 
 Wireless authentication and encryption must be configured separately to protect the network.
 
-![Topology](Screenshot8_WPA2_Personal_Wireless_Security.png)
+#### Step 4: Implementing Wireless Security
+
+Wireless security was configured to protect the home network against unauthorised access and protect data transmitted over the wireless connection.
+
+**Configuration:**
+
+- Navigated to the wireless security settings.
+- Selected WPA2-Personal as the wireless security mode.
+- Configured a pre-shared key (PSK).
+- Saved the wireless security configuration.
+
+**Purpose:**
+
+WPA2-Personal uses a shared passphrase for wireless authentication and provides encryption to protect wireless communications.
+
+Devices must possess the correct passphrase to successfully authenticate to the wireless network.
+
+**Evidence:**
+
+![WPA2-Personal Wireless Security](Screenshot8_WPA2_Personal_Wireless_Security.png)
+
+**Security Considerations:**
+
+An unsecured wireless network could expose the network to unauthorised access, misuse of network resources and interception of unprotected communications.
+
+Although WPA2-Personal is suitable for many home networks, its reliance on a shared passphrase limits individual access management and accountability.
+
+In an enterprise environment, WPA2-Enterprise or WPA3-Enterprise with 802.1X authentication can provide individual authentication and more granular access management.
+
 
 ## Part 3: Configure IP Addressing and Test Connectivity
 Now that my router is configured I configured the IP address for my home PC and Laptop to connect wirelessly to the internet. 
