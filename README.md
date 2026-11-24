@@ -128,10 +128,32 @@ The default gateway enables devices on the local network to communicate with ext
 
 Successfully obtained IPv4 configuration and accessed the router's management interface.
 
-# Step 2: Configure Basic Settings
-Now that I have accesseed the GUI I now needed to change the User name and Password from the default ones provided to my own. To do this I followed the following steps.
+#### Step 2: Securing Administrative Access and Reviewing DHCP Settings
 
-Administration tab → New password → Save Settings → Enter new credentials → Continue
+Default administrative credentials can present a security risk because they may be publicly known and could allow unauthorised access to network infrastructure.
+
+**Configuration:**
+
+- Accessed the wireless router's management interface.
+- Reviewed the existing DHCP settings.
+- Changed the default administrator password.
+- Saved the updated configuration.
+
+**Purpose:**
+
+Changing the default administrator password is a basic router hardening measure that helps protect the management interface against unauthorised access.
+
+Reviewing the DHCP settings helps ensure that connected devices can automatically obtain the network configuration required for communication.
+
+**Evidence:**
+
+![Router Security and DHCP Configuration](Screenshot6_DHCP_Setting_Password_Change_Success.png)
+
+**Security Considerations:**
+
+Unauthorised administrative access could allow an attacker to modify network settings, change wireless security configurations or disrupt network availability.
+
+In a real-world environment, administrative access should be restricted to authorised individuals and protected using strong, unique credentials.
 
 # Step 3: Configure a wireless LAN
 To connect wireless devices to the home wireless network over WIFI I enabled the 2.4 GHz network. 
