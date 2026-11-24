@@ -212,30 +212,175 @@ Although WPA2-Personal is suitable for many home networks, its reliance on a sha
 In an enterprise environment, WPA2-Enterprise or WPA3-Enterprise with 802.1X authentication can provide individual authentication and more granular access management.
 
 
-## Part 3: Configure IP Addressing and Test Connectivity
-Now that my router is configured I configured the IP address for my home PC and Laptop to connect wirelessly to the internet. 
+### Part 3: Client Device Configuration and Connectivity
 
-Laptop → Desktop tab → PC Wireless → Connect tab 
+#### Step 1: Connecting the Wireless Laptop
 
-In the connect tab I entered the Passphrase in the Pre-shared Key field and clicked connect.
-![Topology](Screenshot10_Pre_shared_Key.png)
-![Topology](Screenshot11_Connected_To_Assess_Point.png)
+The laptop was configured to connect to the secured wireless network using the SSID and authentication credentials established during the wireless router configuration.
 
-To test the connectivity I opened the Web browser on the Laptop and did a search using the website 'Skillsforall.srv' and a verification appeared confirming connectivity 
+**Configuration:**
 
-![Topology](Screenshot12_Laptop_Internet_Connectivity.png)
+- Opened the laptop in Cisco Packet Tracer.
+- Navigated to Desktop > PC Wireless.
+- Located the available wireless network with the SSID MyHome.
 
-To connect the Bedroom PC the the wireless network in enabled DHCP to recieve an IP address 
-![Topology](Screenshot14_BedroomPC_DHCP.png)
-To verify connectivity I did the same web browser search I did preciously for the laptop
+![Available Wireless Network](Screenshot9_Connect_Laptop_To_Network.png)
 
-![Topology](Screenshot15_BedroomPC_Internet_Connectivity.png)
+- Selected the wireless network.
+- Entered the configured WPA2-Personal pre-shared key.
 
-I have now completed connecting the network devices, configured the router and wireless LAN and configure all hosts to the Home Network. 
+![Wireless Authentication](Screenshot10_Pre_shared_Key.png)
 
-This is my final Topology.
+- Established a successful connection to the wireless access point.
 
-![Topology](Screenshot16_Final_Topology.png)
+![Successful Wireless Connection](Screenshot11_Connected_To_Assess_Point.png)
+
+**Purpose:**
+
+This configuration enables the laptop to communicate wirelessly with the local network without requiring a physical Ethernet connection.
+
+**Verification:**
+
+Confirmed that the laptop successfully connected to the wireless access point using the configured security credentials.
+
+**Security Considerations:**
+
+Wireless authentication helps restrict network access to devices possessing the correct credentials. However, shared passphrases do not provide individual user accountability and should be managed securely.
+
+#### Step 2: Verifying Wireless Laptop Connectivity
+
+Following successful wireless authentication, a connectivity test was performed to verify that the laptop could access external network services within the simulated environment.
+
+**Testing Procedure:**
+
+- Opened the laptop in Cisco Packet Tracer.
+- Navigated to Desktop > Web Browser.
+- Entered Skillsforall.srv into the address bar.
+- Confirmed that the simulated webpage loaded successfully.
+
+**Purpose:**
+
+This test verifies that the wireless laptop can communicate with a simulated external web server through the configured network infrastructure.
+
+**Expected Result:**
+
+The simulated webpage should load successfully.
+
+**Actual Result:**
+
+The webpage loaded successfully, confirming connectivity to the simulated web server.
+
+**Test Status:** PASS
+
+**Evidence:**
+
+![Laptop Connectivity Test](Screenshot12_Laptop_Internet_Connectivity.png)
+
+#### Step 3: Verifying Office PC Connectivity
+
+A connectivity test was performed on the Office PC to verify that the wired Ethernet connection and DHCP configuration supported access to external network services within the simulated environment.
+
+**Testing Procedure:**
+
+- Opened the Office PC in Cisco Packet Tracer.
+- Navigated to Desktop > Web Browser.
+- Entered Skillsforall.srv into the address bar.
+- Confirmed that the simulated webpage loaded successfully.
+
+**Purpose:**
+
+This test verifies that the Office PC can communicate with a simulated external web server through its wired network connection.
+
+**Expected Result:**
+
+The simulated webpage should load successfully.
+
+**Actual Result:**
+
+The webpage loaded successfully, confirming connectivity to the simulated web server.
+
+**Test Status:** PASS
+
+**Evidence:**
+
+![Office PC Connectivity Test](Screenshot13_OfficePC_Internet_Connectivity.png)
+
+
+#### Step 4: Configuring the Bedroom PC
+
+The Bedroom PC was configured to obtain its IPv4 network settings automatically through DHCP.
+
+**Configuration:**
+
+- Opened the Bedroom PC in Cisco Packet Tracer.
+- Navigated to Desktop > IP Configuration.
+- Selected DHCP.
+- Confirmed that IPv4 network settings were assigned automatically.
+
+**Purpose:**
+
+Using DHCP allows additional devices to join the network without requiring manual IP address configuration. This simplifies network administration and reduces the risk of configuration errors.
+
+**Evidence:**
+
+![Bedroom PC DHCP Configuration](Screenshot14_BedroomPC_DHCP.png)
+
+#### Step 5: Verifying Bedroom PC Connectivity
+
+A connectivity test was performed to verify that the Bedroom PC could access external network services through its wired Ethernet connection.
+
+**Testing Procedure:**
+
+- Opened the Bedroom PC in Cisco Packet Tracer.
+- Navigated to Desktop > Web Browser.
+- Entered Skillsforall.srv into the address bar.
+- Confirmed that the simulated webpage loaded successfully.
+
+**Expected Result:**
+
+The simulated webpage should load successfully.
+
+**Actual Result:**
+
+The webpage loaded successfully, confirming connectivity to the simulated web server.
+
+**Test Status:** PASS
+
+**Evidence:**
+
+![Bedroom PC Connectivity Test](Screenshot15_BedroomPC_Internet_Connectivity.png)
+
+## Security Implementation Summary
+
+Security controls were implemented to reduce the risk of unauthorised access to the simulated home network and its administrative interface.
+
+| Identified Risk | Security Control Implemented | Control Type | Expected Security Benefit |
+|---|---|---|---|
+| Unauthorised access to router administration | Changed the default administrator password | Preventative | Reduces the risk of unauthorised configuration changes |
+| Unauthorised wireless network access | WPA2-Personal authentication | Preventative | Restricts wireless access to devices possessing valid credentials |
+| Interception of wireless communications | WPA2 encryption | Preventative | Protects data transmitted over the wireless connection |
+
+### Security Limitations
+
+Although the implemented controls improve the security of the home network, some limitations remain:
+
+- WPA2-Personal relies on a shared passphrase rather than individual user identities.
+- Shared credentials limit individual accountability.
+- Individual wireless access cannot be easily revoked without changing the shared passphrase.
+- Network segmentation and guest network isolation were not implemented.
+
+### Recommended Security Improvements
+
+In a real-world environment, additional security measures could include:
+
+- Regular router firmware updates.
+- Strong and unique administrative credentials.
+- WPA3 security where supported.
+- Guest network isolation.
+- Individual authentication using 802.1X in enterprise environments.
+
+These recommendations were identified as potential improvements and were not implemented as part of this simulation.
+
 
 
 
