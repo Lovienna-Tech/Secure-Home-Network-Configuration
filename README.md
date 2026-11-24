@@ -3,11 +3,16 @@
 ## Project Overview
 This project demonstrates the configuration and security of a simulated home network using Cisco Packet Tracer. The network consists of wired and wireless end devices, a wireless router, a cable modem and a coaxial splitter. The project focuses on establishing network connectivity, configuring automatic IP address allocation through DHCP, implementing wireless security controls and verifying network functionality. This project was completed as part of my Cisco Networking Basics training to develop practical skills in IT support, networking and cybersecurity.
 
-## Objectives
-1. Connect Devices (Wired & Wireless) to the home router.
-2. Configure the wireless router (DHCP, username/password, SSID, WPA2 security).
-3. Configure IP addressing for end devices.
-4. Test connectivity across all hosts.
+## Project Objectives
+- Establish wired and wireless connectivity within a simulated home network.
+- Configure automatic IPv4 address allocation using DHCP.
+- Identify and access the wireless router's management interface using the default gateway.
+- Improve router security by changing default administrative credentials.
+- Configure a wireless network using a custom SSID.
+- Implement WPA2-Personal authentication and encryption.
+- Verify network connectivity by testing access to a simulated external web server.
+- Document network configurations and provide screenshots as technical evidence.
+
 
 ## Part 1: Connect the devices
 In this project internet and video services are delivered through a coaxial cable. The cable is connected to an outlet in the home and a splitter devices seperates the internet data services from the video services. This enables the two services to be connected to the appropriate devices.
