@@ -94,21 +94,39 @@ The LAN connections allow the desktop computers to communicate within the local 
 ![Topology](Screenshot3_Wired_Connections.png)
 *Physical Ethernet connections between the network devices.*
 
-## Part 2: Configure the Wireless Router
-# Step 1: Access the Home Wireless Router GUI.
-The Home wireless routers are configured using a graphical user interface (GUI) which is accessed through the computers web browsers. To accomplish this we follow the following steps.
+### Part 2: Wireless Router Configuration
 
-Office PC → Desktop tab → IP Configuration → DHCP 
+#### Step 1: Configuring IPv4 Addressing and Accessing the Router
 
-After clicking DHCP it automatically configured the Office PC to be on the same IP network as the Home Wireless Router. 
+The Office PC was configured to obtain its network settings automatically using Dynamic Host Configuration Protocol (DHCP).
+
+**Configuration:**
+
+- Opened the Office PC in Cisco Packet Tracer.
+- Navigated to Desktop > IP Configuration.
+- Selected DHCP to obtain IPv4 configuration automatically.
+- Identified the default gateway address from the assigned network settings.
 
 ![Topology](Screenshot4_Office_PC_IP_Config.png)
 
-To continue the configuration process, using the web browser I have pasted the default gateway into the browser. 
+**Purpose:**
 
-As the Home Router is newly installed I used default credientials such as 'Admin' for both the User Name and Password. The GUI for the Home Wireless Router appeared ready to continue configuring the network. 
+DHCP simplifies network administration by automatically assigning network settings, reducing the need for manual configuration and minimising configuration errors.
+
+The default gateway enables devices on the local network to communicate with external networks.
+
+**Accessing the Router:**
+
+- Opened the web browser on the Office PC.
+- Entered the default gateway address into the address bar.
+- Accessed the wireless router's management interface using the default administrative credentials provided for the simulation.
+
 
 ![Topology](Screenshot5_Router_Login_GUI.png)
+
+**Verification:**
+
+Successfully obtained IPv4 configuration and accessed the router's management interface.
 
 # Step 2: Configure Basic Settings
 Now that I have accesseed the GUI I now needed to change the User name and Password from the default ones provided to my own. To do this I followed the following steps.
