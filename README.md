@@ -1,12 +1,7 @@
-# Configure-a-Wireless-Router-and-Clients
-This project simulates the configuration of a home wireless router and client devices using Cisco Packet Tracer. The goal was to connect multiple wired and wireless devices to the router, configure IP addressing, enable wireless security, and verify internet connectivity.
-This lab demonstrates:
-- Understanding of home network topology (cable modem, router, splitter, PCs, and wireless laptop).
-- Configuring a router GUI (DHCP, wireless SSID, WPA2 security).
-- Assigning IP addresses dynamically (DHCP).
-- Verifying connectivity through skillsforall.srv and ping tests.
+# Secure-Home-Network-Configuration Cisco Packet Tracer
+A stimulated home network configured using Cisco Packet Tracer, demonstrating IPv4 addressing, DHCP, wired and wireless connectivity, router hardening, WPA2- Personal security and network connectivity testing.
 
-## Objection
+## Objectives
 1. Connect Devices (Wired & Wireless) to the home router.
 2. Configure the wireless router (DHCP, username/password, SSID, WPA2 security).
 3. Configure IP addressing for end devices.
