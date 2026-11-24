@@ -48,21 +48,28 @@ The network includes:
 
 *Figure 1: Completed home network topology in Cisco Packet Tracer.*
 
-## Part 1: Connect the devices
-In this project internet and video services are delivered through a coaxial cable. The cable is connected to an outlet in the home and a splitter devices seperates the internet data services from the video services. This enables the two services to be connected to the appropriate devices.
+## Network Configuration
 
-![Topology](Screenshot_Topology.png)
+### Part 1: Physical Network Connections
 
-# Step 1: Connect the coaxial cables
-Connected the Cable Splitter to the Cable Modem for the internet connection.
+#### Step 1: Connecting Coaxial Cables
 
-Connections → Coaxial cable → Cable Splitter → Coaxial1 port → Cable Modem → Port 0.
-Connected the Cable Splitter to the TV for video connection.
-Connections → Coaxial cable → Cable Splitter → Coaxial2 port → TV → Port 0.
+In this simulated home network, internet and television services are delivered through a coaxial cable. A coaxial splitter distributes the incoming cable signal to the cable modem and television.
+
+**Configuration:**
+
+- Connected the cable splitter (Coaxial1) to the cable modem (Port 0).
+- Connected the cable splitter (Coaxial2) to the television (Port 0).
 
 ![Topology](Screenshot1_coaxial-connections.png)
 
-Turned the TV on and an image appeared to represent a TV program confirming connectivity.
+**Purpose:**
+
+The cable modem provides the connection between the home network and the simulated internet service provider (ISP), while the television receives the television signal.
+
+**Verification:**
+
+Powered on the television and confirmed that a television programme was displayed, verifying the simulated television connection.
 
 ![Topology](Screenshot2_TV_on.png)
 
