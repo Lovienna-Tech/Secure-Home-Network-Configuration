@@ -33,7 +33,20 @@ This project demonstrates the configuration and security of a simulated home net
 - Network connectivity testing
 - Technical documentation
 
+## Network Topology
 
+The network topology illustrates how wired and wireless end devices connect through a central wireless router and cable modem.
+The network includes:
+- A coaxial splitter
+- A cable modem
+- A wireless router
+- Two wired desktop computers
+- A wireless laptop
+- A television
+
+![Final Topology](Screenshot16_Final_Topology.png)
+
+*Figure 1: Completed home network topology in Cisco Packet Tracer.*
 
 ## Part 1: Connect the devices
 In this project internet and video services are delivered through a coaxial cable. The cable is connected to an outlet in the home and a splitter devices seperates the internet data services from the video services. This enables the two services to be connected to the appropriate devices.
