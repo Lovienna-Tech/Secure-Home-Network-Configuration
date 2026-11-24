@@ -400,7 +400,178 @@ All six documented tests passed successfully. The results demonstrate that the c
 
 Supporting screenshots are provided throughout the Network Configuration section.
 
+## Practical Troubleshooting Exercise
 
+To extend the original Cisco networking activity, a simulated wireless authentication fault was deliberately introduced to develop practical IT support, troubleshooting and incident management skills.
+
+### Incident Report: INC-001
+
+| Incident Details | Description |
+|---|---|
+| Incident ID | INC-001 |
+| Incident Title | Wireless Authentication Failure |
+| Category | Network Connectivity |
+| Priority | Medium |
+| Affected Device | Wireless Laptop |
+| Affected Service | Wireless Network Connectivity |
+| Status | Resolved |
+| Environment | Cisco Packet Tracer Simulation |
+
+### 1. Problem Identification
+
+The wireless laptop was unable to connect to the MyHome wireless network following a change to the router's WPA2-Personal passphrase.
+
+The laptop was also unable to access the simulated external web server, displaying a "Host Name Unresolved" error.
+
+**Evidence:**
+
+![Wireless Connection Failure](Screenshot17_Wireless_Connection_Failure.png)
+
+![Web Connectivity Failure](Screenshot18_Web_Connectivity_Failure.png)
+
+### 2. Investigation and Fault Isolation
+
+The following investigation was conducted:
+
+- Confirmed that the laptop had working connectivity before the configuration change.
+- Checked the laptop's wireless connection status.
+- Attempted to access the simulated external web server.
+- Tested web connectivity from the wired Office PC.
+- Confirmed that the Office PC could still access the simulated webpage.
+
+The successful Office PC connectivity test indicated that the issue was not a network-wide outage.
+
+**Evidence:**
+
+![Office PC Connectivity Verification](Screenshot19_OfficePC_Connectivity_Verification.png)
+
+### 3. Root Cause Analysis
+
+The root cause was identified as a wireless authentication mismatch.
+
+The router's WPA2-Personal passphrase had been changed, while the laptop retained its original wireless credentials.
+
+Although the browser displayed a hostname resolution error, the underlying issue was the loss of wireless connectivity rather than an independently identified DNS fault.
+
+### 4. Resolution
+
+The following corrective actions were performed:
+
+- Accessed the laptop's wireless interface configuration.
+- Confirmed the configured SSID.
+- Updated the laptop's wireless passphrase to match the router's configuration.
+- Allowed the laptop to reconnect to the wireless network.
+
+The existing WPA2-Personal security configuration was maintained throughout the resolution.
+
+No changes to the router's DHCP or DNS settings were required.
+
+### 5. Resolution Verification
+
+Following the corrective action, the laptop successfully reconnected to the MyHome wireless network.
+
+![Wireless Connection Restored](Screenshot20_Wireless_Connection_Restored.png)
+
+Web connectivity was tested again by accessing Skillsforall.srv.
+
+The simulated webpage loaded successfully, confirming that connectivity had been restored.
+
+![Web Connectivity Restored](Screenshot21_Web_Connectivity_Restored.png)
+
+### 6. Incident Testing Results
+
+| Test ID | Test Description | Before Resolution | After Resolution |
+|---|---|---|---|
+| INC-TC-001 | Laptop wireless connection | FAIL | PASS |
+| INC-TC-002 | Laptop web connectivity | FAIL | PASS |
+| INC-TC-003 | Office PC web connectivity | PASS | Not retested |
+
+**Incident Status:** Resolved
+
+### 7. Preventative Recommendations
+
+To reduce the likelihood of similar incidents occurring in a real-world environment:
+
+- Communicate planned wireless credential changes to affected users through approved channels.
+- Update authorised devices following credential changes.
+- Maintain secure configuration and change management records.
+- Verify network connectivity following configuration changes.
+- Consider individual authentication in enterprise wireless environments.
+
+### 8. Lessons Learned
+
+This troubleshooting exercise demonstrated the importance of:
+
+- Establishing a working network baseline.
+- Identifying symptoms before implementing a solution.
+- Using fault isolation to narrow down probable causes.
+- Distinguishing error messages from underlying root causes.
+- Maintaining security controls during troubleshooting.
+- Verifying functionality following corrective action.
+- Documenting technical incidents and supporting evidence.
+
+## Project Learning Outcomes
+
+Through completing this project, I developed practical knowledge and skills in the following areas:
+
+### Networking
+
+- Understanding the relationship between LAN and WAN connections.
+- Configuring wired and wireless network devices.
+- Understanding IPv4 addressing, subnet masks and default gateways.
+- Configuring automatic IP address allocation using DHCP.
+- Verifying network connectivity and functionality.
+
+### Cybersecurity and Access Control
+
+- Recognising security risks associated with default administrative credentials.
+- Implementing basic router hardening measures.
+- Understanding wireless authentication and encryption.
+- Identifying the limitations of shared credentials.
+- Recognising the benefits of individual authentication in enterprise environments.
+
+### IT Support and Troubleshooting
+
+- Establishing a working network baseline.
+- Investigating network connectivity issues.
+- Applying fault isolation and root cause analysis.
+- Resolving wireless authentication failures.
+- Verifying system functionality following corrective action.
+- Producing structured incident reports and technical documentation.
+
+### Governance and Risk Awareness
+
+- Identifying security risks and appropriate preventative controls.
+- Recognising the limitations of implemented security controls.
+- Collecting evidence to support testing and verification.
+- Recommending preventative measures to reduce future risks.
+
+## Future Development
+
+To build upon the skills developed through this project, I intend to explore:
+
+- Network segmentation using VLANs.
+- Small business network design.
+- Access control lists (ACLs).
+- Enterprise wireless authentication using 802.1X.
+- Identity and access management.
+- Security risk assessments and control evaluation.
+
+These areas represent future learning objectives and were not implemented as part of this project.
+
+## Project Conclusion
+
+This project successfully demonstrated the configuration, security and connectivity testing of a simulated home network.
+
+The additional troubleshooting exercise extended the original networking activity by introducing a wireless authentication fault, investigating its root cause and implementing a successful resolution.
+
+The project provides practical evidence of my developing skills in networking, IT support, cybersecurity and security risk awareness.
+
+## Acknowledgements
+
+The initial network configuration was based on the Cisco Networking Basics activity "Configure a Wireless Router and Clients".
+
+The project was extended through additional security analysis, structured connectivity testing documentation, a simulated troubleshooting exercise and an incident report to support my professional development.
 
 
 
