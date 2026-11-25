@@ -44,7 +44,7 @@ The network includes:
 - A wireless laptop
 - A television
 
-![Final Network Topology](Screenshot16_Final_Topology.png)
+![Final Network Topology](Screenshots/Screenshot16_Final_Topology.png)
 
 *Figure 1: Completed home network topology in Cisco Packet Tracer.*
 
@@ -61,7 +61,7 @@ In this simulated home network, internet and television services are delivered t
 - Connected the cable splitter (Coaxial1) to the cable modem (Port 0).
 - Connected the cable splitter (Coaxial2) to the television (Port 0).
 
-![Coaxial Connections](Screenshot1_coaxial-connections.png)
+![Coaxial Connections](Screenshots/Screenshot1_coaxial-connections.png)
 
 **Purpose:**
 
@@ -71,7 +71,7 @@ The cable modem provides the connection between the home network and the simulat
 
 Powered on the television and confirmed that a television programme was displayed, verifying the simulated television connection.
 
-![Television Connectivity](Screenshot2_TV_on.png)
+![Television Connectivity](Screenshots/Screenshot2_TV_on.png)
 
 #### Step 2: Establishing Wired Network Connections
 
@@ -91,7 +91,7 @@ The LAN connections allow the desktop computers to communicate within the local 
 
 **Evidence:**
 
-![Wired Network Connectivity](Screenshot3_Wired_Connections.png)
+![Wired Network Connectivity](Screenshots/Screenshot3_Wired_Connections.png)
 *Physical Ethernet connections between the network devices.*
 
 ### Part 2: Wireless Router Configuration
@@ -107,7 +107,7 @@ The Office PC was configured to obtain its network settings automatically using 
 - Selected DHCP to obtain IPv4 configuration automatically.
 - Identified the default gateway address from the assigned network settings.
 
-![Office PC IP Configuration](Screenshot4_Office_PC_IP_Config.png)
+![Office PC IP Configuration](Screenshots/Screenshot4_Office_PC_IP_Config.png)
 
 **Purpose:**
 
@@ -121,8 +121,7 @@ The default gateway enables devices on the local network to communicate with ext
 - Entered the default gateway address into the address bar.
 - Accessed the wireless router's management interface using the default administrative credentials provided for the simulation.
 
-
-![Router Management Interface](Screenshot5_Router_Login_GUI.png)
+![Router Management Interface](Screenshots/Screenshot5_Router_Login_GUI.png)
 
 **Verification:**
 
@@ -147,7 +146,7 @@ Reviewing the DHCP settings helps ensure that connected devices can automaticall
 
 **Evidence:**
 
-![Router Security and DHCP Configuration](Screenshot6_DHCP_Setting_Password_Change_Success.png)
+![Router Security and DHCP Configuration](Screenshots/Screenshot6_DHCP_Setting_Password_Change_Success.png)
 
 **Security Considerations:**
 
@@ -174,7 +173,7 @@ The 2.4 GHz frequency band provides wireless connectivity and generally offers g
 
 **Evidence:**
 
-![Wireless SSID Configuration](Screenshot7_SSID_Wireless.png)
+![Wireless SSID Configuration](Screenshots/Screenshot7_SSID_Wireless.png)
 
 **Security Considerations:**
 
@@ -201,7 +200,7 @@ Devices must possess the correct passphrase to successfully authenticate to the 
 
 **Evidence:**
 
-![WPA2-Personal Wireless Security](Screenshot8_WPA2_Personal_Wireless_Security.png)
+![WPA2-Personal Wireless Security](Screenshots/Screenshot8_WPA2_Personal_Wireless_Security.png)
 
 **Security Considerations:**
 
@@ -224,16 +223,16 @@ The laptop was configured to connect to the secured wireless network using the S
 - Navigated to Desktop > PC Wireless.
 - Located the available wireless network with the SSID MyHome.
 
-![Available Wireless Network](Screenshot9_Connect_Laptop_To_Network.png)
+![Available Wireless Network](Screenshots/Screenshot9_Connect_Laptop_To_Network.png)
 
 - Selected the wireless network.
 - Entered the configured WPA2-Personal pre-shared key.
 
-![Wireless Authentication](Screenshot10_Pre_shared_Key.png)
+![Wireless Authentication](Screenshots/Screenshot10_Pre_shared_Key.png)
 
 - Established a successful connection to the wireless access point.
 
-![Successful Wireless Connection](Screenshot11_Connected_To_Assess_Point.png)
+![Successful Wireless Connection](Screenshots/Screenshot11_Connected_To_Assess_Point.png)
 
 **Purpose:**
 
@@ -274,7 +273,7 @@ The webpage loaded successfully, confirming connectivity to the simulated web se
 
 **Evidence:**
 
-![Laptop Connectivity Test](Screenshot12_Laptop_Internet_Connectivity.png)
+![Laptop Connectivity Test](Screenshots/Screenshot12_Laptop_Internet_Connectivity.png)
 
 #### Step 3: Verifying Office PC Connectivity
 
@@ -303,7 +302,7 @@ The webpage loaded successfully, confirming connectivity to the simulated web se
 
 **Evidence:**
 
-![Office PC Connectivity Test](Screenshot13_OfficePC_Internet_Connectivity.png)
+![Office PC Connectivity Test](Screenshots/Screenshot13_OfficePC_Internet_Connectivity.png)
 
 
 #### Step 4: Configuring the Bedroom PC
@@ -323,7 +322,7 @@ Using DHCP allows additional devices to join the network without requiring manua
 
 **Evidence:**
 
-![Bedroom PC DHCP Configuration](Screenshot14_BedroomPC_DHCP.png)
+![Bedroom PC DHCP Configuration](Screenshots/Screenshot14_BedroomPC_DHCP.png)
 
 #### Step 5: Verifying Bedroom PC Connectivity
 
@@ -348,7 +347,7 @@ The webpage loaded successfully, confirming connectivity to the simulated web se
 
 **Evidence:**
 
-![Bedroom PC Connectivity Test](Screenshot15_BedroomPC_Internet_Connectivity.png)
+![Bedroom PC Connectivity Test](Screenshots/Screenshot15_BedroomPC_Internet_Connectivity.png)
 
 ## Security Implementation Summary
 
@@ -425,9 +424,9 @@ The laptop was also unable to access the simulated external web server, displayi
 
 **Evidence:**
 
-![Wireless Connection Failure](Screenshot17_Wireless_Connection_Failure.png)
+![Wireless Connection Failure](Screenshots/Screenshot17_Wireless_Connection_Failure.png)
 
-![Web Connectivity Failure](Screenshot18_Web_Connectivity_Failure.png)
+![Web Connectivity Failure](Screenshots/Screenshot18_Web_Connectivity_Failure.png)
 
 ### 2. Investigation and Fault Isolation
 
@@ -443,7 +442,7 @@ The successful Office PC connectivity test indicated that the issue was not a ne
 
 **Evidence:**
 
-![Office PC Connectivity Verification](Screenshot19_OfficePC_Connectivity_Verification.png)
+![Office PC Connectivity Verification](Screenshots/Screenshot19_OfficePC_Connectivity_Verification.png)
 
 ### 3. Root Cause Analysis
 
@@ -470,13 +469,13 @@ No changes to the router's DHCP or DNS settings were required.
 
 Following the corrective action, the laptop successfully reconnected to the MyHome wireless network.
 
-![Wireless Connection Restored](Screenshot20_Wireless_Connection_Restored.png)
+![Wireless Connection Restored](Screenshots/Screenshot20_Wireless_Connection_Restored.png)
 
 Web connectivity was tested again by accessing Skillsforall.srv.
 
 The simulated webpage loaded successfully, confirming that connectivity had been restored.
 
-![Web Connectivity Restored](Screenshot21_Web_Connectivity_Restored.png)
+![Web Connectivity Restored](Screenshots/Screenshot21_Web_Connectivity_Restored.png)
 
 ### 6. Incident Testing Results
 
